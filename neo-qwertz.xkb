@@ -74,6 +74,7 @@ xkb_keymap {
     key <AB08> { [ comma,                  semicolon,      NoSymbol,                Greek_omega,             NoSymbol,                NoSymbol,                Greek_OMEGA,             NoSymbol                 ] };
     key <AB09> { [ period,                 colon,          NoSymbol,                Greek_mu,                NoSymbol,                NoSymbol,                ifonlyif,                NoSymbol                 ] };
     key <AB10> { [ minus,                  underscore,     NoSymbol,                Greek_zeta,              NoSymbol,                NoSymbol,                U2124,                   NoSymbol                 ] };
+    key <AD12> { [ plus,                   asterisk,       NoSymbol,                macron,                  asciitilde,              NoSymbol,                dead_breve,              NoSymbol                 ] };
 
     include "shift(both_capslock)"
     include "level3(caps_switch)"
