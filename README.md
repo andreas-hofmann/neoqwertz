@@ -11,5 +11,10 @@ Load the layout like so:
 
     xkbcomp neo-qwertz.xkb $DISPLAY &> /dev/null
 
+Or add it globally in the X-server:
+
+    sudo cp -r xkb /usr/share/X11
+    setxkbmap de neoqwertz
+
 Currently only support for X available. If you think this is cool and add
 configs for Windows or any other OS, feel free to send me a pull request.
