@@ -1171,9 +1171,9 @@ xkb_symbols "neoqwertz_base"  {
     key <AE11> { [ ssharp,                 question        ] };
     key <AE12> { [ acute,                  grave           ] };
 
-    key <AD01> { [ q,                      Q               ] };
+    key <AD01> { [ q,                      Q,              NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, at ] };
     key <AD02> { [ w,                      W               ] };
-    key <AD03> { [ e,                      E               ] };
+    key <AD03> { [ e,                      E,              NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, EuroSign ] };
     key <AD04> { [ r,                      R               ] };
     key <AD05> { [ t,                      T               ] };
     key <AD06> { [ z,                      Z               ] };
