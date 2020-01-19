@@ -72,7 +72,7 @@ xkb_keymap {
     key <AB08> { [ comma,                  semicolon       ] };
     key <AB09> { [ period,                 colon           ] };
     key <AB10> { [ minus,                  underscore      ] };
-    key <AD12> { [ plus,                   asterisk        ] };
+    key <AD12> { [ plus,                   asterisk,       NoSymbol, NoSymbol, asciitilde ] };
 
     include "shift(both_capslock)"
     include "level3(caps_switch)"
