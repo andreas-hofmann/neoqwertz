@@ -1164,17 +1164,17 @@ xkb_symbols "neoqwertz_base"  {
     key <AE04> { [ 4,                      dollar          ] };
     key <AE05> { [ 5,                      percent         ] };
     key <AE06> { [ 6,                      ampersand       ] };
-    key <AE07> { [ 7,                      slash,          NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft ] };
-    key <AE08> { [ 8,                      parenleft,      NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft ] };
-    key <AE09> { [ 9,                      parenright,     NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright ] };
-    key <AE10> { [ 0,                      equal,          NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright ] };
-    key <AE11> { [ ssharp,                 question,       NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash ] };
+    key <AE07> { [ 7,                      slash           ],           [ braceleft                              ] };
+    key <AE08> { [ 8,                      parenleft       ],           [ bracketleft                            ] };
+    key <AE09> { [ 9,                      parenright      ],           [ bracketright                           ] };
+    key <AE10> { [ 0,                      equal           ],           [ braceright                             ] };
+    key <AE11> { [ ssharp,                 question        ],           [ backslash                              ] };
     key <AE12> { [ acute,                  grave           ] };
 
-    key <AD01> { [ q,                      Q,              NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, at ] };
-    key <AD02> { [ w,                      W               ] };
-    key <AD03> { [ e,                      E,              NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, EuroSign ] };
-    key <AD04> { [ r,                      R               ] };
+    key <AD01> { [ q,                      Q               ],           [ at                                     ] };
+    key <AD02> { [ w,                      W               ],           [ NoSymbol,             Pointer_Button1  ] };
+    key <AD03> { [ e,                      E               ],           [ EuroSign,             Pointer_Up       ] };
+    key <AD04> { [ r,                      R               ],           [ NoSymbol,             Pointer_Button2  ] };
     key <AD05> { [ t,                      T               ] };
     key <AD06> { [ z,                      Z               ] };
     key <AD07> { [ u,                      U               ] };
@@ -1183,9 +1183,9 @@ xkb_symbols "neoqwertz_base"  {
     key <AD10> { [ p,                      P               ] };
     key <AD11> { [ udiaeresis,             Udiaeresis      ] };
     key <AC01> { [ a,                      A               ] };
-    key <AC02> { [ s,                      S               ] };
-    key <AC03> { [ d,                      D               ] };
-    key <AC04> { [ f,                      F               ] };
+    key <AC02> { [ s,                      S               ],           [ XF86AudioPrev,        Pointer_Left     ] };
+    key <AC03> { [ d,                      D               ],           [ XF86AudioPlay,        Pointer_Down     ] };
+    key <AC04> { [ f,                      F               ],           [ XF86AudioNext,        Pointer_Right    ] };
     key <AC05> { [ g,                      G               ] };
     key <AC06> { [ h,                      H               ] };
     key <AC07> { [ j,                      J               ] };
@@ -1203,7 +1203,12 @@ xkb_symbols "neoqwertz_base"  {
     key <AB08> { [ comma,                  semicolon       ] };
     key <AB09> { [ period,                 colon           ] };
     key <AB10> { [ minus,                  underscore      ] };
-    key <AD12> { [ plus,                   asterisk,       NoSymbol, NoSymbol, asciitilde ] };
+    key <AD12> { [ plus,                   asterisk        ],           [ asciitilde                             ] };
+
+    modifier_map Control{ Control_L };
+
+    key.type = "ONE_LEVEL";
+    key <RCTL> { [ ISO_Group_Latch ] };
 };
 
 partial alphanumeric_keys modifier_keys keypad_keys
