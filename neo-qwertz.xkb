@@ -37,7 +37,7 @@ xkb_keymap {
     key <AE08> { [ 8,                      parenleft,      NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft ] };
     key <AE09> { [ 9,                      parenright,     NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright ] };
     key <AE10> { [ 0,                      equal,          NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright ] };
-    key <AE11> { [ ssharp,                 question        ] };
+    key <AE11> { [ ssharp,                 question,       NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash ] };
     key <AE12> { [ acute,                  grave           ] };
 
     key <AD01> { [ q,                      Q,              NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, at ] };
