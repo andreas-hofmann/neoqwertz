@@ -1164,10 +1164,10 @@ xkb_symbols "neoqwertz_base"  {
     key <AE04> { [ 4,                      dollar          ] };
     key <AE05> { [ 5,                      percent         ] };
     key <AE06> { [ 6,                      ampersand       ] };
-    key <AE07> { [ 7,                      slash           ] };
-    key <AE08> { [ 8,                      parenleft       ] };
-    key <AE09> { [ 9,                      parenright      ] };
-    key <AE10> { [ 0,                      equal           ] };
+    key <AE07> { [ 7,                      slash,          NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft ] };
+    key <AE08> { [ 8,                      parenleft,      NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft ] };
+    key <AE09> { [ 9,                      parenright,     NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright ] };
+    key <AE10> { [ 0,                      equal,          NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright ] };
     key <AE11> { [ ssharp,                 question        ] };
     key <AE12> { [ acute,                  grave           ] };
 
