@@ -9,7 +9,7 @@ Checkout the description for the advanced layers at http://neo-layout.org
 
 Load the layout like so:
 
-    xkbcomp neo-qwertz.xkb $DISPLAY &> /dev/null
+    xkbcomp neoqwertz.xkb $DISPLAY &> /dev/null
 
 Or add it globally in the X-server:
 
