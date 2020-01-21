@@ -19,6 +19,7 @@ xkb_keymap {
   xkb_keycodes  { include "evdev+aliases(qwertz)" };
   xkb_types     { include "complete" };
   xkb_compat    { include "complete" };
+  partial alphanumeric_keys modifier_keys keypad_keys
   xkb_symbols   {
     include "inet(evdev)"
     include "pc"
@@ -33,17 +34,17 @@ xkb_keymap {
     key <AE04> { [ 4,                      dollar          ] };
     key <AE05> { [ 5,                      percent         ] };
     key <AE06> { [ 6,                      ampersand       ] };
-    key <AE07> { [ 7,                      slash           ],           [ braceleft                              ] };
-    key <AE08> { [ 8,                      parenleft       ],           [ bracketleft                            ] };
-    key <AE09> { [ 9,                      parenright      ],           [ bracketright                           ] };
-    key <AE10> { [ 0,                      equal           ],           [ braceright                             ] };
-    key <AE11> { [ ssharp,                 question        ],           [ backslash                              ] };
+    key <AE07> { [ 7,                      slash           ],           [ braceleft    ] };
+    key <AE08> { [ 8,                      parenleft       ],           [ bracketleft  ] };
+    key <AE09> { [ 9,                      parenright      ],           [ bracketright ] };
+    key <AE10> { [ 0,                      equal           ],           [ braceright   ] };
+    key <AE11> { [ ssharp,                 question        ],           [ backslash    ] };
     key <AE12> { [ acute,                  grave           ] };
 
-    key <AD01> { [ q,                      Q               ],           [ at                                     ] };
-    key <AD02> { [ w,                      W               ],           [ NoSymbol,             Pointer_Button1  ] };
-    key <AD03> { [ e,                      E               ],           [ EuroSign,             Pointer_Up       ] };
-    key <AD04> { [ r,                      R               ],           [ NoSymbol,             Pointer_Button2  ] };
+    key <AD01> { [ q,                      Q               ],           [ at           ] };
+    key <AD02> { [ w,                      W               ],           [ NoSymbol     ] };
+    key <AD03> { [ e,                      E               ],           [ EuroSign     ] };
+    key <AD04> { [ r,                      R               ],           [ NoSymbol     ] };
     key <AD05> { [ t,                      T               ] };
     key <AD06> { [ z,                      Z               ] };
     key <AD07> { [ u,                      U               ] };
@@ -52,9 +53,9 @@ xkb_keymap {
     key <AD10> { [ p,                      P               ] };
     key <AD11> { [ udiaeresis,             Udiaeresis      ] };
     key <AC01> { [ a,                      A               ] };
-    key <AC02> { [ s,                      S               ],           [ NoSymbol,             Pointer_Left     ] };
-    key <AC03> { [ d,                      D               ],           [ NoSymbol,             Pointer_Down     ] };
-    key <AC04> { [ f,                      F               ],           [ NoSymbol,             Pointer_Right    ] };
+    key <AC02> { [ s,                      S               ] };
+    key <AC03> { [ d,                      D               ] };
+    key <AC04> { [ f,                      F               ] };
     key <AC05> { [ g,                      G               ] };
     key <AC06> { [ h,                      H               ] };
     key <AC07> { [ j,                      J               ] };
@@ -69,10 +70,11 @@ xkb_keymap {
     key <AB05> { [ b,                      B               ] };
     key <AB06> { [ n,                      N               ] };
     key <AB07> { [ m,                      M               ] };
+
     key <AB08> { [ comma,                  semicolon       ] };
     key <AB09> { [ period,                 colon           ] };
     key <AB10> { [ minus,                  underscore      ] };
-    key <AD12> { [ plus,                   asterisk        ],           [ asciitilde                             ] };
+    key <AD12> { [ plus,                   asterisk        ],           [ asciitilde   ] };
 
     include "shift(both_capslock)"
     include "level3(caps_switch)"
